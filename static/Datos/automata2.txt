@@ -1,0 +1,9 @@
+A B C D F G
+0 1
+0:B 1:C
+0:A 1:D
+0:F 1:G
+0:F 1:G
+0:F 1:G
+0:G 1:G
+D C F

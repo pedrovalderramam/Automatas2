@@ -1,0 +1,21 @@
+AFND-E A AFD
+https://www.youtube.com/watch?reload=9&reload=9&v=NF47BSorRfU&t=57s
+https://www.youtube.com/watch?v=29Qp_AWXFt4
+
+MINIMIZACION
+https://www.youtube.com/watch?reload=9&reload=9&v=UiXkJUTkp44
+
+UNION
+https://www.youtube.com/watch?reload=9&reload=9&reload=9&v=30ghcsyb0uM
+
+INTERSECCION
+https://www.youtube.com/watch?v=JAWihcyhFos
+https://www.quora.com/Deterministic-finite-automata-intersection-and-union-How-do-I-use-product-construction
+https://courses.engr.illinois.edu/cs373/sp2010/lectures/lect_04.pdf
+
+COMPLEMENTO
+https://www.geeksforgeeks.org/complementation-process-in-dfa/
+
+HEROKU
+https://codigofacilito.com/articulos/deploy-flask-heroku
+

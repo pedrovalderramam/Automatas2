@@ -16,19 +16,10 @@
                                     <div class="panel-title">Selecciona los autómatas a operar</div>
                                 </div>
                                 <div class="panel-body">
-        <p>
-         {% with messages = get_flashed_messages() %}
-           {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-success">
-             <strong>{{ message }}</strong>
-           </div>
-          {% endfor %}
-           {% endif %}
-         {% endwith %}
-        </p>
+
                                     <div class="row">
-                                        <p style="padding: 8px;" class="text-center">Solo archivos .txt con el debido formato, por favor!</p>
+                                        <p style="padding: 8px;" class="text-center">Solo archivos .txt con el debido formato, por favor!!</p>
+                                        <p style="padding: 8px;" class="text-center">Los archivos deben llamarse automata1.txt y automata2.txt respectivamente</p>
                                     </div>
                                     <div class="row" style="padding: 10px 15px 9px;">
                                         <form method="post" action="upload" enctype="multipart/form-data">
@@ -39,11 +30,63 @@
                                                     </div>
                                                 </div>
                                                 <div class="row text-center" style="padding-left: 20px;padding-right: 20px;">
-             <input type="submit" value="Submit" class="btn btn-lg btn-block btn-success" style="border-radius: 50px;background-color:hover: #35832f;">
+             <input type="submit" value="Submit" class="btn btn-lg btn-block btn-success" style="border-radius: 50px;background-color: #35832f;">
             </div>
                                             </div>
                                         </form>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+<div id="wrapper">
+            <div id="page-wrapper">
+                <div class="row">
+                    <div class="container">
+                        <div id="identitycard" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <div class="panel-title">Instructivo para formato de archivos</div>
+                                </div>
+                                <div class="panel-body">
+
+                                    <div class="row">
+                                        <p style="padding: 8px;" class="text-center">Para dar formato correcto a un archivo de texto, favor de seguir las siguientes instrucciones:</p>
+                                        <p style="padding: 8px;" class="text-left">1. En la primer linea, coloque los estados que van a conformar el automata,separelos por espacios.</p>
+                                        <p style="padding: 8px;" class="text-left">Notas:</p>
+                                        <p style="padding: 8px;" class="text-left">   Por peculiaridades del software, evite incluir la letra E entre los estados.</p>
+                                        <p style="padding: 8px;" class="text-left">   Cuando ingrese dos automatas, no se deben repetir los nombres de los estados en ambos automatas.</p>
+                                        <p style="padding: 8px;" class="text-left">   Al principio,coloque el estado inicial, luego coloque los estados que contengan transiciones y por último,ingrese los estados sin ninguna transición</p>
+                                        <p style="padding: 8px;" class="text-left">2. En la segunda linea, coloque el alfabeto del automata,separelos por espacios.</p>
+                                        <p style="padding: 8px;" class="text-left">Notas:</p>
+                                        <p style="padding: 8px;" class="text-left">La letra e se utiliza como epsilon para transiciones vacías.</p>
+                                        <p style="padding: 8px;" class="text-left">3.A partir de aqui,ingrese las diferentes transiciones para cada simbolo, debe ser una linea por estado,en el orden que se ingresaron los estados.</p>
+                                        <p style="padding: 8px;" class="text-left">Notas:</p>
+                                        <p style="padding: 8px;" class="text-left">Si un estado va a dos estados con un simbolo,separelos con una ,</p>
+                                        <p style="padding: 8px;" class="text-left">Ejemplo: a:A,Q lleva un estado a los estados Q y A cuando se ingresa el simbolo del alfabeto, ´a´</p>
+                                        <p style="padding: 8px;" class="text-left">Si un estado no tiene transiciones con ningun simbolo,no agregue nada</p>
+                                        <p style="padding: 8px;" class="text-left">4.En la última fila,escriba los estados que serán finales (de aceptación).</p>
+                                        <p style="padding: 8px;" class="text-left">Ejemplo de un archivo correctamente llenado:</p>
+                                        A B C D<br>
+                                        a b c e<br>
+                                        a:A b:C<br>
+                                        e:D<br>
+                                        a:C,D c:A<br>
+                                        D B<br>
+                                        <p style="padding: 8px;" class="text-left">En el ejemplo anterior tenemos lo siguiente:</p>
+                                        <p style="padding: 8px;" class="text-left">a. Los estados del automata son A,B,C,D, donde A es el estado inicial</p>
+                                        <p style="padding: 8px;" class="text-left">b. El alfabeto del automata está formado por los simbolos: a,b,c,e, donde e representa que acepta transiciones vacías.</p>
+                                        <br> c. El estado A va hacia A con el simbolo a y hacia C con el simbolo b.
+                                        <br> El estado B va hacia D con una transición vacía e.
+                                        <br> El estado C va hacia C y D con el simbolo a y hacia A con el simbolo c
+                                        <br> El estado D no tiene ninguna transición.
+                                        <p style="padding: 8px;" class="text-left">d. Los estados de aceptación son D y B</p>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

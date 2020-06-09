@@ -1,0 +1,7 @@
+q0 q1 q2 q3
+a x e
+a:q1 e:q1 x:q3
+a:q2 e:q3
+x:q3
+e:q2
+q3
